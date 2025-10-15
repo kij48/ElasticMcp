@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "elastic": {
+      "command": "node",
+      "args": [
+        "C:\\repos\\MCP\\ElasticMcp\\index.js"
+      ],
+      "env": {
+        "ELASTICSEARCH_NODE": "https://localhost:9200",
+        "ELASTICSEARCH_API_KEY": "your_api_key_here",
+        "ELASTICSEARCH_INDEX_PATTERN": ".ds-fasit-apex-*",
+        "CORRELATION_ID_FIELD": "fields.CorrelationIdentifier",
+        "PII_MASKING_ENABLED": "true",
+        "PII_MASK_SSN": "true"
+      }
+    }
+  }
+}

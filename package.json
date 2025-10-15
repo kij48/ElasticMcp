@@ -1,0 +1,26 @@
+{
+  "name": "elastic-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for read-only Elasticsearch operations with correlation ID search",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "mcp",
+    "elasticsearch",
+    "correlation-id",
+    "read-only"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.15.0",
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
