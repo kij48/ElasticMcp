@@ -34,8 +34,8 @@ async function searchByCorrelationId(correlationId, indexPattern, size = 100, so
       index: indexPattern || config.indexPattern,
       body: {
         query: {
-          match: {
-            [config.correlationIdField]: correlationId
+          term: {
+            [`${config.correlationIdField}.keyword`]: correlationId
           }
         },
         size: size,
